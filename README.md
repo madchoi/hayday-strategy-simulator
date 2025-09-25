@@ -18,9 +18,9 @@ The goal is to recommend which products to produce at different levels based on 
 
 ## 📂 Project Structure  
 hayday-strategy-simulator/
-│
-├── data/ # scraped and cleaned data (CSV files)
-├── notebooks/ # Jupyter notebooks for exploration + analysis
+#│
+#├── data/ # scraped and cleaned data (CSV files)
+#├── notebooks/ # Jupyter notebooks for exploration + analysis
 ├── src/ # Python scripts for scraping + analysis functions
 ├── visuals/ # saved charts + plots
 └── README.md # project description
