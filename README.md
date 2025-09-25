@@ -17,13 +17,7 @@ The goal is to recommend which products to produce at different levels based on 
 - **Jupyter Notebooks** (analysis + exploration)
 
 ## 📂 Project Structure  
-hayday-strategy-simulator/
-#│
-#├── data/ # scraped and cleaned data (CSV files)
-#├── notebooks/ # Jupyter notebooks for exploration + analysis
-├── src/ # Python scripts for scraping + analysis functions
-├── visuals/ # saved charts + plots
-└── README.md # project description
+<pre> ``` hayday-strategy-simulator/ │ ├── data/ # scraped and cleaned data (CSV files) ├── notebooks/ # Jupyter notebooks for exploration + analysis ├── src/ # Python scripts for scraping + analysis functions ├── visuals/ # saved charts + plots └── README.md # project description ``` </pre>
 
 ## 🚀 Next Steps  
 1. Scrape product and recipe data from the Hay Day Wiki.  
