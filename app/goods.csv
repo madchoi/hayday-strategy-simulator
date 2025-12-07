@@ -1,0 +1,409 @@
+Name,name_norm,Level,Level_num,Time,time_min,XP,needs_norm,Source,Building,Production_Type,Yield_qty
+Wheat,wheat,1,1,2 min,2.0,1.0,{},Field (1st crop),field,Raw/Resource,2.0
+Egg,egg,1,1,20 min,20.0,2.0,{'chicken feed': 1.0},Chicken (1st animal product),chicken,Raw/Resource,1.0
+Corn,corn,2,2,5 min,5.0,1.0,{},Field (2nd crop),field,Raw/Resource,2.0
+Bread,bread,2,2,5 min,5.0,3.0,{'wheat': 3.0},Bakery,bakery,Machine/Processed,1.0
+Chicken feed,chicken feed,3,3,5 min,5.0,1.0,"{'corn': 1.0, 'wheat': 2.0}",Feed Mill,feed mill,Machine/Processed,3.0
+Soybean,soybean,5,5,20 min,20.0,2.0,{},Field (3rd crop),field,Raw/Resource,2.0
+Cow feed,cow feed,6,6,10 min,10.0,2.0,"{'corn': 1.0, 'soybean': 2.0}",Feed Mill,feed mill,Machine/Processed,3.0
+Milk,milk,6,6,1 h,60.0,3.0,{'cow feed': 1.0},Cow (2nd animal product),cow,Raw/Resource,1.0
+Cream,cream,6,6,20 min,20.0,6.0,{'milk': 1.0},Dairy,dairy,Machine/Processed,1.0
+Sugarcane,sugarcane,7,7,30 min,30.0,3.0,{},Field (4th crop),field,Raw/Resource,2.0
+Corn bread,corn bread,7,7,30 min,30.0,8.0,"{'corn': 2.0, 'egg': 2.0}",Bakery,bakery,Machine/Processed,1.0
+Brown sugar,brown sugar,7,7,20 min,20.0,4.0,{'sugarcane': 1.0},Sugar Mill,sugar mill,Machine/Processed,1.0
+Popcorn,popcorn,8,8,30 min,30.0,4.0,{'corn': 2.0},Popcorn Pot,popcorn pot,Machine/Processed,1.0
+Carrot,carrot,9,9,10 min,10.0,2.0,{},Field (5th crop),field,Raw/Resource,2.0
+Butter,butter,9,9,30 min,30.0,10.0,{'milk': 2.0},Dairy,dairy,Machine/Processed,1.0
+Pancake,pancake,9,9,30 min,30.0,13.0,"{'brown sugar': 1.0, 'egg': 3.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Pig feed,pig feed,10,10,20 min,20.0,2.0,"{'carrot': 2.0, 'soybean': 1.0}",Feed Mill,feed mill,Machine/Processed,3.0
+Bacon,bacon,10,10,4 h,240.0,5.0,{'pig feed': 1.0},Pig (3rd animal product),pig,Raw/Resource,1.0
+Cookie,cookie,10,10,1 h,60.0,13.0,"{'brown sugar': 1.0, 'egg': 2.0, 'wheat': 2.0}",Bakery,bakery,Machine/Processed,1.0
+Bacon and eggs,bacon and eggs,11,11,1 h,60.0,24.0,"{'bacon': 2.0, 'egg': 4.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Cheese,cheese,12,12,1 h,60.0,15.0,{'milk': 3.0},Dairy,dairy,Machine/Processed,1.0
+Indigo,indigo,13,13,2 h,120.0,5.0,{},Field (6th crop),field,Raw/Resource,2.0
+White sugar,white sugar,13,13,40 min,40.0,6.0,{'sugarcane': 2.0},Sugar Mill,sugar mill,Machine/Processed,1.0
+Carrot pie,carrot pie,14,14,1 h,60.0,10.0,"{'carrot': 3.0, 'egg': 1.0, 'wheat': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Pumpkin,pumpkin,15,15,3 h,180.0,6.0,{},Field (7th crop),field,Raw/Resource,2.0
+Pumpkin pie,pumpkin pie,15,15,2 h,120.0,19.0,"{'egg': 1.0, 'pumpkin': 3.0, 'wheat': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Apple,apple,15,15,16 h,960.0,7.0,{},Apple tree (8th crop),apple tree,Raw/Resource,2.0
+Sheep feed,sheep feed,16,16,30 min,30.0,3.0,"{'soybean': 1.0, 'wheat': 3.0}",Feed Mill,feed mill,Machine/Processed,3.0
+Wool,wool,16,16,6 h,360.0,5.0,{'sheep feed': 1.0},Sheep (4th animal product),sheep,Raw/Resource,1.0
+Buttered popcorn,buttered popcorn,16,16,1 h,60.0,15.0,"{'butter': 1.0, 'corn': 2.0}",Popcorn Pot,popcorn pot,Machine/Processed,1.0
+Sweater,sweater,17,17,2 h,120.0,18.0,{'wool': 2.0},Loom,loom,Machine/Processed,1.0
+Cotton,cotton,18,18,2 h 30 min,150.0,6.0,{},Field (9th crop),field,Raw/Resource,2.0
+Bacon pie,bacon pie,18,18,3 h,180.0,26.0,"{'bacon': 3.0, 'egg': 1.0, 'wheat': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Syrup,syrup,18,18,1 h 30 min,90.0,11.0,{'sugarcane': 4.0},Sugar Mill,sugar mill,Machine/Processed,1.0
+Cotton fabric,cotton fabric,18,18,30 min,30.0,13.0,{'cotton': 3.0},Loom,loom,Machine/Processed,1.0
+Hamburger,hamburger,18,18,2 h,120.0,22.0,"{'bacon': 2.0, 'bread': 2.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Raspberry,raspberry,19,19,18 h,1080.0,9.0,{},Raspberry bush (10th crop),raspberry bush,Raw/Resource,2.0
+Raspberry muffin,raspberry muffin,19,19,45 min,45.0,17.0,"{'egg': 1.0, 'raspberry': 2.0, 'wheat': 2.0}",Bakery,bakery,Machine/Processed,1.0
+Blue woolly hat,blue woolly hat,19,19,1 h,60.0,13.0,"{'indigo': 1.0, 'wool': 1.0}",Loom,loom,Machine/Processed,1.0
+Cotton shirt,cotton shirt,19,19,45 min,45.0,29.0,{'cotton fabric': 2.0},Sewing Machine,sewing machine,Machine/Processed,1.0
+Blue sweater,blue sweater,20,20,3 h,180.0,25.0,"{'indigo': 2.0, 'wool': 2.0}",Loom,loom,Machine/Processed,1.0
+Carrot cake,carrot cake,21,21,1 h 30 min,90.0,20.0,"{'brown sugar': 1.0, 'butter': 1.0, 'carrot': 2.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Wooly chaps,wooly chaps,21,21,1 h 30 min,90.0,37.0,"{'cotton fabric': 1.0, 'wool': 3.0}",Sewing Machine,sewing machine,Machine/Processed,1.0
+Cherry,cherry,22,22,1 d 3 h,1620.0,13.0,{},Cherry tree (11th crop),cherry tree,Raw/Resource,2.0
+Cream cake,cream cake,23,23,3 h,180.0,26.0,"{'cream': 1.0, 'white sugar': 1.0, 'wheat': 5.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Red berry cake,red berry cake,23,23,1 h,60.0,31.0,"{'cherry': 2.0, 'egg': 1.0, 'milk': 1.0, 'raspberry': 1.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Cheesecake,cheesecake,24,24,4 h,240.0,34.0,"{'cheese': 1.0, 'cookie': 1.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Silver ore,silver ore,24,24,Instant,1.0,0.0,{},Mine,mine,Raw/Resource,1.0
+Gold ore,gold ore,24,24,Instant,1.0,0.0,{},Mine,mine,Raw/Resource,1.0
+Platinum ore,platinum ore,24,24,Instant,1.0,0.0,{},Mine,mine,Raw/Resource,1.0
+Silver bar,silver bar,24,24,8 h,480.0,18.0,{'silver ore': 3.0},Smelter,smelter,Machine/Processed,1.0
+Chili pepper,chili pepper,25,25,4 h,240.0,7.0,{},Field (12th crop),field,Raw/Resource,2.0
+Chili popcorn,chili popcorn,25,25,2 h,120.0,15.0,"{'chili pepper': 2.0, 'corn': 2.0}",Popcorn Pot,popcorn pot,Machine/Processed,1.0
+Gold bar,gold bar,25,25,12 h,720.0,21.0,{'gold ore': 3.0},Smelter,smelter,Machine/Processed,1.0
+Platinum bar,platinum bar,25,25,16 h,960.0,24.0,{'platinum ore': 3.0},Smelter,smelter,Machine/Processed,1.0
+Violet dress,violet dress,25,25,2 h 15 min,135.0,39.0,"{'cotton fabric': 2.0, 'indigo': 1.0, 'raspberry': 1.0}",Sewing Machine,sewing machine,Machine/Processed,1.0
+Blackberry,blackberry,26,26,1 d 8 h,1920.0,16.0,{},Blackberry bush (13th crop),blackberry bush,Raw/Resource,2.0
+Blackberry muffin,blackberry muffin,26,26,45 min,45.0,27.0,"{'blackberry': 2.0, 'egg': 2.0, 'wheat': 1.0}",Bakery,bakery,Machine/Processed,1.0
+Carrot juice,carrot juice,26,26,30 min,30.0,6.0,{'carrot': 3.0},Juice Press,juice press,Machine/Processed,1.0
+Red lure,red lure,27,27,1 h 30 min,90.0,1.0,{},Lure Workbench,lure workbench,Machine/Processed,1.0
+Green lure,green lure,27,27,1 h 15 min,75.0,2.0,{},Lure Workbench (2),lure workbench,Machine/Processed,1.0
+Blue lure,blue lure,27,27,1 h,60.0,3.0,{},Lure Workbench (3),lure workbench,Machine/Processed,1.0
+Purple lure,purple lure,27,27,45 min,45.0,4.0,{},Lure Workbench (4),lure workbench,Machine/Processed,1.0
+Gold lure,gold lure,27,27,30 min,30.0,5.0,{},Lure Workbench (5),lure workbench,Machine/Processed,1.0
+Fish fillet,fish fillet,27,27,Instant or 20 h,1200.0,0.0,{'gold lure': 1.0},Fish (5th animal product),fish,Raw/Resource,1.0
+Fish burger,fish burger,27,27,2 h,120.0,27.0,"{'bread': 2.0, 'chili pepper': 1.0, 'fish fillet': 2.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Apple pie,apple pie,28,28,2 h 30 min,150.0,32.0,"{'apple': 3.0, 'egg': 1.0, 'syrup': 1.0, 'wheat': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Fish pie,fish pie,28,28,2 h,120.0,27.0,"{'egg': 1.0, 'fish fillet': 3.0, 'wheat': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Apple juice,apple juice,28,28,2 h,120.0,15.0,{'apple': 2.0},Juice Press,juice press,Machine/Processed,1.0
+Vanilla ice cream,vanilla ice cream,29,29,2 h,120.0,20.0,"{'cream': 1.0, 'milk': 1.0, 'white sugar': 1.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Tomato,tomato,30,30,6 h,360.0,8.0,{},Field (14th crop),field,Raw/Resource,2.0
+Roasted tomatoes,roasted tomatoes,30,30,1 h 30 min,90.0,14.0,{'tomato': 2.0},BBQ Grill,bbq grill,Machine/Processed,1.0
+Cherry juice,cherry juice,30,30,2 h 30 min,150.0,26.0,{'cherry': 2.0},Juice Press,juice press,Machine/Processed,1.0
+Fishing net,fishing net,30,30,4 h,240.0,7.0,{},Net Maker,net maker,Machine/Processed,1.0
+Mystery net,mystery net,30,30,3 h,180.0,7.0,{},Net Maker,net maker,Machine/Processed,1.0
+Blueberry,blueberry,30,30,1 d 10 h,2040.0,16.0,{},Blueberry bush (15th crop),blueberry bush,Raw/Resource,2.0
+Tomato juice,tomato juice,31,31,1 h 30 min,90.0,19.0,{'tomato': 3.0},Juice Press,juice press,Machine/Processed,1.0
+Berry juice,berry juice,31,31,3 h,180.0,24.0,"{'blackberry': 1.0, 'raspberry': 1.0}",Juice Press,juice press,Machine/Processed,1.0
+Blueberry Cheesecake,blueberry cheesecake,31,31,4 h,240.0,60.0,"{'cheesecake': 1.0, 'blueberry': 2.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Goat feed,goat feed,32,32,40 min,40.0,3.0,"{'carrot': 2.0, 'corn': 1.0, 'wheat': 1.0}",Feed Mill,feed mill,Machine/Processed,3.0
+Goat milk,goat milk,32,32,8 h,480.0,6.0,{'goat feed': 1.0},Goat (6th animal product),goat,Raw/Resource,1.0
+Goat cheese,goat cheese,33,33,1 h 30 min,90.0,19.0,{'goat milk': 2.0},Dairy,dairy,Machine/Processed,1.0
+Pizza,pizza,33,33,15 min,15.0,23.0,"{'cheese': 1.0, 'tomato': 1.0, 'wheat': 2.0}",Bakery,bakery,Machine/Processed,1.0
+Coal,coal,33,33,Instant,1.0,0.0,{},Mine,mine,Raw/Resource,1.0
+Refined coal,refined coal,33,33,6 h,360.0,13.0,{'coal': 3.0},Smelter,smelter,Machine/Processed,1.0
+Cherry popsicle,cherry popsicle,33,33,3 h,180.0,42.0,"{'cherry juice': 1.0, 'syrup': 1.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Blueberry Muffin,blueberry muffin,33,33,45 min,45.0,28.0,"{'wheat': 1.0, 'eggs': 2.0, 'blueberry': 2.0}",Bakery,bakery,Machine/Processed,1.0
+Strawberry,strawberry,34,34,8 h,480.0,10.0,{},Field (16th crop),field,Raw/Resource,2.0
+Feta pie,feta pie,34,34,1 h 30 min,90.0,26.0,"{'egg': 1.0, 'goat cheese': 1.0, 'wheat': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Iron ore,iron ore,34,34,Instant,1.0,0.0,{},Mine,mine,Raw/Resource,1.0
+Iron bar,iron bar,34,34,7 h,420.0,15.0,{'iron ore': 3.0},Smelter,smelter,Machine/Processed,1.0
+Strawberry ice cream,strawberry ice cream,34,34,4 h,240.0,40.0,"{'cream': 1.0, 'milk': 1.0, 'strawberry': 3.0, 'white sugar': 1.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Wheat bundle,wheat bundle,34 (Rep. 3),34,1 h 30 min,90.0,10.0,{'wheat': 75.0},Feed Mill,feed mill,Machine/Processed,3.0
+Meat bucket,meat bucket,34 (Rep. 3),34,45 min,45.0,15.0,"{'fish fillet': 3.0, 'carrot': 5.0}",Feed Mill,feed mill,Machine/Processed,3.0
+Potato,potato,35,35,3 h 40 min,220.0,7.0,{},Field (17th crop),field,Raw/Resource,2.0
+Strawberry cake,strawberry cake,35,35,3 h,180.0,38.0,"{'cream': 1.0, 'strawberry': 2.0, 'wheat': 3.0, 'white sugar': 1.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Baked potato,baked potato,35,35,35 min,35.0,36.0,"{'cheese': 1.0, 'chili pepper': 1.0, 'cream': 1.0, 'potato': 2.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Apple jam,apple jam,35,35,6 h,360.0,26.0,{'apple': 3.0},Jam Maker,jam maker,Machine/Processed,1.0
+Chocolate cake,chocolate cake,36,36,2 h,120.0,38.0,"{'brown sugar': 1.0, 'butter': 1.0, 'cacao': 2.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Casserole,casserole,36,36,2 h,120.0,44.0,"{'bacon': 2.0, 'cheese': 1.0, 'egg': 2.0, 'potato': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Cacao,cacao,36,36,1 d 10 h,2040.0,16.0,{},Cacao tree (18th crop),cacao tree,Raw/Resource,2.0
+Raspberry jam,raspberry jam,36,36,7 h,420.0,30.0,{'raspberry': 3.0},Jam Maker,jam maker,Machine/Processed,1.0
+Spicy pizza,spicy pizza,37,37,15 min,15.0,27.0,"{'cheese': 1.0, 'chili pepper': 1.0, 'tomato': 1.0, 'wheat': 2.0}",Bakery,bakery,Machine/Processed,1.0
+Blackberry jam,blackberry jam,37,37,8 h,480.0,46.0,{'blackberry': 3.0},Jam Maker,jam maker,Machine/Processed,1.0
+Potato feta cake,potato feta cake,38,38,2 h,120.0,37.0,"{'egg': 4.0, 'goat cheese': 1.0, 'potato': 1.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Cherry jam,cherry jam,38,38,7 h,420.0,40.0,{'cherry': 3.0},Jam Maker,jam maker,Machine/Processed,1.0
+Bracelet,bracelet,38,38,2 h,120.0,61.0,"{'gold bar': 1.0, 'silver bar': 2.0}",Jeweler,jeweler,Machine/Processed,1.0
+Potato bread,potato bread,39,39,45 min,45.0,34.0,"{'butter': 1.0, 'egg': 3.0, 'potato': 2.0, 'white sugar': 1.0}",Bakery,bakery,Machine/Processed,1.0
+Shepherd's pie,shepherd's pie,39,39,1 h 40 min,100.0,34.0,"{'bacon': 2.0, 'carrot': 2.0, 'potato': 2.0, 'pumpkin': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Chocolate ice cream,chocolate ice cream,39,39,2 h 30 min,150.0,41.0,"{'cream': 1.0, 'cacao': 2.0, 'milk': 1.0, 'white sugar': 1.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Honeycomb,honeycomb,39,39,35 min,35.0,8.0,{},Beehive tree (7th animal product),beehive tree,Raw/Resource,2.0
+Necklace,necklace,39,39,3 h,180.0,87.0,"{'gold bar': 1.0, 'platinum bar': 1.0, 'silver bar': 2.0}",Jeweler,jeweler,Machine/Processed,1.0
+Honey,honey,39,39,20 min,20.0,19.0,{'honeycomb': 2.0},Honey Extractor,honey extractor,Machine/Processed,1.0
+Honey popcorn,honey popcorn,40,40,1 h 30 min,90.0,43.0,"{'corn': 2.0, 'honey': 2.0}",Popcorn Pot,popcorn pot,Machine/Processed,1.0
+Diamond ring,diamond ring,40,40,4 h,240.0,98.0,"{'gold bar': 2.0, 'platinum bar': 2.0}",Jeweler,jeweler,Machine/Processed,1.0
+Fish and chips,fish and chips,41,41,1 h 30 min,90.0,29.0,"{'fish fillet': 2.0, 'potato': 3.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Iron bracelet,iron bracelet,41,41,1 h 30 min,90.0,79.0,"{'iron bar': 2.0, 'refined coal': 2.0, 'silver bar': 1.0}",Jeweler,jeweler,Machine/Processed,1.0
+Coffee bean,coffee bean,42,42,1 d 1 h,1500.0,12.0,{},Coffee bush (19th crop),coffee bush,Raw/Resource,2.0
+Espresso,espresso,42,42,5 min,5.0,29.0,"{'coffee bean': 3.0, 'white sugar': 1.0}",Coffee Kiosk,coffee kiosk,Machine/Processed,1.0
+Honey apple cake,honey apple cake,42,42,3 h 20 min,200.0,57.0,"{'apple': 2.0, 'egg': 2.0, 'honey': 2.0, 'wheat': 2.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Caffè latte,caffè latte,43,43,10 min,10.0,26.0,"{'coffee bean': 2.0, 'milk': 1.0, 'white sugar': 1.0}",Coffee Kiosk,coffee kiosk,Machine/Processed,1.0
+Chocolate popcorn,chocolate popcorn,44,44,2 h 30 min,150.0,29.0,"{'cacao': 2.0, 'corn': 2.0}",Popcorn Pot,popcorn pot,Machine/Processed,1.0
+Lobster trap,lobster trap,44,44,2 h,120.0,5.0,{},Net Maker,net maker,Machine/Processed,1.0
+Lobster tail,lobster tail,44,44,6 h,360.0,24.0,{'lobster trap': 1.0},Lobster Pool (8th animal product),lobster pool,Raw/Resource,1.0
+Frutti di Mare pizza,frutti di mare pizza,45,45,15 min,15.0,48.0,"{'cheese': 1.0, 'fish fillet': 1.0, 'lobster tail': 1.0, 'wheat': 2.0}",Bakery,bakery,Machine/Processed,1.0
+Caffè mocha,caffè mocha,45,45,15 min,15.0,35.0,"{'coffee bean': 1.0, 'cream': 1.0, 'cacao': 2.0}",Coffee Kiosk,coffee kiosk,Machine/Processed,1.0
+Chamomile,chamomile,45,45,20 min,20.0,2.0,{},Field (1st crop),field,Raw/Resource,2.0
+Soothing pad,soothing pad,45,45,1 h,60.0,39.0,"{'cotton fabric': 2.0, 'wheat': 5.0, 'chamomile': 5.0}",Sewing Machine,sewing machine,Machine/Processed,1.0
+Raspberry mocha,raspberry mocha,46,46,30 min,30.0,31.0,"{'cacao': 1.0, 'coffee bean': 1.0, 'cream': 1.0, 'raspberry': 1.0}",Coffee Kiosk,coffee kiosk,Machine/Processed,1.0
+Lobster soup,lobster soup,46,46,2 h 30 min,150.0,73.0,"{'chili pepper': 2.0, 'cream': 1.0, 'lobster tail': 2.0, 'tomato': 1.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Hot chocolate,hot chocolate,47,47,25 min,25.0,38.0,"{'cacao': 2.0, 'cream': 1.0, 'milk': 1.0, 'white sugar': 1.0}",Coffee Kiosk,coffee kiosk,Machine/Processed,1.0
+Tomato soup,tomato soup,47,47,1 h 30 min,90.0,57.0,"{'chili pepper': 1.0, 'goat cheese': 1.0, 'tomato juice': 1.0, 'tomato': 2.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Red scarf,red scarf,48,48,2 h 30 min,150.0,34.0,"{'strawberry': 2.0, 'wool': 2.0}",Loom,loom,Machine/Processed,1.0
+Lobster skewer,lobster skewer,48,48,40 min,40.0,50.0,"{'chili pepper': 1.0, 'honey': 1.0, 'lobster tail': 1.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Beeswax,beeswax,48,48,45 min,45.0,28.0,{'honeycomb': 3.0},Honey Extractor,honey extractor,Machine/Processed,1.0
+Strawberry candle,strawberry candle,48,48,2 h,120.0,44.0,"{'beeswax': 1.0, 'strawberry': 2.0}",Candle Maker,candle maker,Machine/Processed,1.0
+Rustic bouquet,rustic bouquet,49,49,45 min,45.0,25.0,"{'wheat': 5.0, 'indigo': 3.0, 'cotton': 3.0}",Flower Shop,flower shop,Machine/Processed,1.0
+Pumpkin soup,pumpkin soup,49,49,2 h,120.0,47.0,"{'butter': 1.0, 'carrot': 2.0, 'honey': 1.0, 'pumpkin': 3.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Asparagus,asparagus,49,49,6 h,360.0,8.0,{},Field (20th crop),field,Raw/Resource,2.0
+Asparagus quiche,asparagus quiche,49,49,2 h,120.0,36.0,"{'asparagus': 2.0, 'egg': 2.0, 'cheese': 1.0, 'wheat': 4.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Strawberry jam,strawberry jam,50,50,7 h 30 min,450.0,32.0,{'strawberry': 3.0},Jam Maker,jam maker,Machine/Processed,1.0
+Duck trap,duck trap,50,50,1 h,60.0,3.0,{},Net Maker,net maker,Machine/Processed,1.0
+Duck feather,duck feather,50,50,3 h,180.0,17.0,{'duck trap': 1.0},Duck Salon (9th animal product),duck salon,Raw/Resource,1.0
+Sesame,sesame,50,50,1 h,60.0,4.0,{},Field (21st crop),field,Raw/Resource,2.0
+Sesame ice cream,sesame ice cream,50,50,2 h,120.0,21.0,"{'cream': 1.0, 'sesame': 3.0, 'brown sugar': 1.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Caramel apple,caramel apple,51,51,2 h,120.0,31.0,"{'apple': 1.0, 'syrup': 2.0}",Candy Machine,candy machine,Machine/Processed,1.0
+Pillow,pillow,51,51,3 h,180.0,81.0,"{'cotton fabric': 2.0, 'duck feather': 3.0}",Sewing Machine,sewing machine,Machine/Processed,1.0
+Asparagus soup,asparagus soup,51,51,1 h,60.0,30.0,"{'asparagus': 3.0, 'cream': 2.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Toffee,toffee,52,52,1 h 30 min,90.0,21.0,"{'butter': 1.0, 'wheat': 1.0, 'white sugar': 1.0}",Candy Machine,candy machine,Machine/Processed,1.0
+Raspberry candle,raspberry candle,52,52,1 h 45 min,105.0,43.0,"{'beeswax': 1.0, 'raspberry': 2.0}",Candle Maker,candle maker,Machine/Processed,1.0
+Pineapple,pineapple,52,52,30 min,30.0,3.0,{},Field (22nd crop),field,Raw/Resource,2.0
+Pineapple juice,pineapple juice,52,52,45 min,45.0,8.0,{'pineapple': 3.0},Juice Press,juice press,Machine/Processed,1.0
+Fish soup,fish soup,53,53,3 h,180.0,35.0,"{'carrot': 1.0, 'fish fillet': 2.0, 'milk': 1.0, 'potato': 3.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Lily,lily,53,53,1 h 30 min,90.0,5.0,{},Field (23rd crop),field,Raw/Resource,2.0
+Soy sauce,soy sauce,54,54,3 h,180.0,19.0,"{'soybean': 9.0, 'wheat': 1.0}",Sauce Maker,sauce maker,Machine/Processed,1.0
+Chocolate,chocolate,54,54,20 h,1200.0,55.0,"{'cacao': 3.0, 'cream': 1.0, 'white sugar': 1.0}",Candy Machine,candy machine,Machine/Processed,1.0
+Fancy cake,fancy cake,54,54,15 min,15.0,49.0,"{'cream cake': 1.0, 'lily': 3.0, 'raspberry': 3.0, 'gold ore': 1.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Rice,rice,56,56,45 min,45.0,3.0,{},Field (24th crop),field,Raw/Resource,2.0
+Sushi roll,sushi roll,56,56,1 h,60.0,58.0,"{'fish fillet': 1.0, 'rice': 15.0, 'soy sauce': 1.0}",Sushi Bar,sushi bar,Machine/Processed,1.0
+Olive,olive,57,57,1 d,1440.0,17.0,{},Olive tree (25th crop),olive tree,Raw/Resource,2.0
+Lollipop,lollipop,57,57,12 h,720.0,41.0,"{'cherry': 1.0, 'strawberry': 2.0, 'syrup': 1.0}",Candy Machine,candy machine,Machine/Processed,1.0
+Lettuce,lettuce,58,58,3 h 30 min,210.0,7.0,{},Field (26th crop),field,Raw/Resource,2.0
+Feta salad,feta salad,58,58,1 h 30 min,90.0,89.0,"{'goat cheese': 2.0, 'lettuce': 3.0, 'olive': 2.0, 'roasted tomatoes': 1.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Lobster sushi,lobster sushi,59,59,1 h,60.0,76.0,"{'lobster tail': 1.0, 'rice': 15.0, 'soy sauce': 1.0}",Sushi Bar,sushi bar,Machine/Processed,1.0
+Blanket,blanket,59,59,3 h 30 min,210.0,131.0,"{'cotton fabric': 3.0, 'duck feather': 5.0, 'pumpkin': 1.0}",Sewing Machine,sewing machine,Machine/Processed,1.0
+Jelly beans,jelly beans,60,60,1 d,1440.0,81.0,"{'blackberry jam': 1.0, 'raspberry jam': 1.0, 'white sugar': 1.0}",Candy Machine,candy machine,Machine/Processed,1.0
+Olive oil,olive oil,60,60,45 min,45.0,33.0,{'olive': 3.0},Sauce Maker,sauce maker,Machine/Processed,1.0
+Garlic,garlic,60,60,30 min,30.0,3.0,{},Field (27th crop),field,Raw/Resource,2.0
+Garlic bread,garlic bread,60,60,15 min,15.0,24.0,"{'bread': 2.0, 'butter': 1.0, 'garlic': 4.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Veggie bagel,veggie bagel,61,61,40 min,40.0,63.0,"{'bread': 2.0, 'lettuce': 3.0, 'olive oil': 1.0, 'tomato': 2.0}",Sandwich Bar,sandwich bar,Machine/Processed,1.0
+Mayonnaise,mayonnaise,62,62,15 min,15.0,44.0,"{'egg': 4.0, 'olive oil': 1.0}",Sauce Maker,sauce maker,Machine/Processed,1.0
+BLT salad,blt salad,62,62,1 h 45 min,105.0,86.0,"{'bacon': 2.0, 'lettuce': 3.0, 'mayonnaise': 1.0, 'roasted tomatoes': 1.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Caramel latte,caramel latte,62,62,15 min,15.0,41.0,"{'coffee bean': 2.0, 'toffee': 1.0, 'milk': 1.0}",Coffee Kiosk,coffee kiosk,Machine/Processed,1.0
+Peanuts,peanuts,62,62,5 hr,300.0,43.0,{},Squirrel House (10th animal product),squirrel house,Raw/Resource,1.0
+Sunflower,sunflower,63,63,1 h 30 min,90.0,5.0,{},Field (28th crop),field,Raw/Resource,2.0
+Egg sushi,egg sushi,63,63,2 h,120.0,66.0,"{'brown sugar': 1.0, 'egg': 4.0, 'rice': 15.0, 'soy sauce': 1.0}",Sushi Bar,sushi bar,Machine/Processed,1.0
+Honey peanuts,honey peanuts,63,63,40 min,40.0,64.0,"{'honey': 1.0, 'peanuts': 1.0}",Candy Machine,candy machine,Machine/Processed,1.0
+Seafood salad,seafood salad,64,64,2 h,120.0,91.0,"{'fish fillet': 1.0, 'lettuce': 3.0, 'lobster tail': 1.0, 'mayonnaise': 1.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Berry smoothie,berry smoothie,64,64,1 h 15 min,75.0,65.0,"{'blackberry': 3.0, 'strawberry': 3.0, 'raspberry': 3.0}",Smoothie Mixer,smoothie mixer,Machine/Processed,1.0
+Snack mix,snack mix,64,64,45 min,45.0,50.0,"{'corn': 2.0, 'sesame': 1.0, 'peanuts': 1.0}",Popcorn Pot,popcorn pot,Machine/Processed,1.0
+Bright bouquet,bright bouquet,65,65,20 min,20.0,40.0,"{'sunflower': 5.0, 'indigo': 3.0, 'cotton': 1.0, 'iron ore': 5.0}",Flower Shop,flower shop,Machine/Processed,1.0
+Bacon toast,bacon toast,65,65,1 h 40 min,100.0,77.0,"{'bacon': 2.0, 'bread': 2.0, 'lettuce': 3.0, 'mayonnaise': 1.0}",Sandwich Bar,sandwich bar,Machine/Processed,1.0
+Pineapple cake,pineapple cake,65,65,1 h 15 min,75.0,31.0,"{'pineapple': 3.0, 'egg': 2.0, 'cherry': 2.0, 'wheat': 4.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Chocolate pie,chocolate pie,65,65,1 h 15 min,75.0,70.0,"{'wheat': 3.0, 'cacao': 3.0, 'egg': 1.0, 'peanuts': 1.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Cabbage,cabbage,65,65,45 min,45.0,3.0,{},Field (29th crop),field,Raw/Resource,2.0
+Cabbage soup,cabbage soup,65,65,1 h 30 min,90.0,32.0,"{'cabbage': 3.0, 'bacon': 2.0, 'potato': 2.0, 'carrot': 2.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Lemon,lemon,66,66,1 d 5 h,1740.0,18.0,{},Lemon tree (30th crop),lemon tree,Raw/Resource,2.0
+Lemon curd,lemon curd,66,66,25 min,25.0,45.0,"{'butter': 1.0, 'egg': 2.0, 'lemon': 2.0, 'white sugar': 1.0}",Sauce Maker,sauce maker,Machine/Processed,1.0
+Olive dip,olive dip,66,66,45 min,45.0,56.0,"{'olive': 3.0, 'bread': 2.0, 'lemon': 1.0, 'fish fillet': 1.0}",Sauce Maker,sauce maker,Machine/Processed,1.0
+Egg sandwich,egg sandwich,66,66,1 h 20 min,80.0,69.0,"{'bread': 2.0, 'egg': 2.0, 'lettuce': 3.0, 'mayonnaise': 1.0}",Sandwich Bar,sandwich bar,Machine/Processed,1.0
+Green smoothie,green smoothie,66,66,45 min,45.0,38.0,"{'apple': 1.0, 'lemon': 1.0, 'lettuce': 5.0}",Smoothie Mixer,smoothie mixer,Machine/Processed,1.0
+Fresh pasta,fresh pasta,67,67,15 min,15.0,5.0,"{'egg': 1.0, 'wheat': 2.0}",Pasta Maker,pasta maker,Machine/Processed,1.0
+Pasta salad,pasta salad,67,67,2 h 30 min,150.0,90.0,"{'fresh pasta': 4.0, 'lemon': 2.0, 'olive oil': 1.0, 'tomato': 2.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Lemon pie,lemon pie,67,67,2 h 15 min,135.0,53.0,"{'egg': 1.0, 'lemon curd': 1.0, 'wheat': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Grilled asparagus,grilled asparagus,67,67,1 h 15 min,75.0,58.0,"{'asparagus': 5.0, 'bacon': 3.0, 'lemon': 1.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Onion,onion,68,68,5 h,300.0,8.0,{},Field (31st crop),field,Raw/Resource,2.0
+Grilled onion,grilled onion,68,68,1 h,60.0,23.0,"{'butter': 1.0, 'onion': 2.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Lemon cake,lemon cake,68,68,2 h 30 min,150.0,107.0,"{'cream': 1.0, 'egg': 2.0, 'lemon curd': 2.0, 'wheat': 3.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Lemon essential oil,lemon essential oil,68,68,10 min,10.0,34.0,{'lemon': 3.0},Essential Oils Lab,essential oils lab,Machine/Processed,1.0
+Peanut butter milkshake,peanut butter milkshake,68,68,1 h 40 min,100.0,86.0,"{'peanuts': 1.0, 'milk': 1.0, 'cream': 1.0, 'cacao': 3.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Tomato sauce,tomato sauce,69,69,30 min,30.0,27.0,"{'brown sugar': 1.0, 'lemon': 1.0, 'tomato': 2.0}",Sauce Maker,sauce maker,Machine/Processed,1.0
+Honey toast,honey toast,69,69,1 h,60.0,31.0,"{'bread': 1.0, 'egg': 1.0, 'honey': 1.0, 'milk': 1.0}",Sandwich Bar,sandwich bar,Machine/Processed,1.0
+Fried rice,fried rice,69,69,1 h,60.0,24.0,"{'rice': 5.0, 'egg': 5.0}",Wok Kitchen,wok kitchen,Machine/Processed,1.0
+Yogurt smoothie,yogurt smoothie,70,70,1 h,60.0,42.0,"{'cherry': 1.0, 'cream': 1.0, 'raspberry': 2.0, 'white sugar': 1.0}",Smoothie Mixer,smoothie mixer,Machine/Processed,1.0
+Cloche hat,cloche hat,70,70,2 h,120.0,56.0,"{'strawberry': 2.0, 'wool': 6.0}",Hat Maker,hat maker,Machine/Processed,1.0
+Cucumber,cucumber,70,70,35 min,35.0,3.0,{},Field (32nd crop),field,Raw/Resource,2.0
+Cucumber smoothie,cucumber smoothie,70,70,40 min,40.0,32.0,"{'cucumber': 3.0, 'honey': 1.0, 'pineapple': 3.0}",Smoothie Mixer,smoothie mixer,Machine/Processed,1.0
+Blueberry Chutney,blueberry chutney,70,70,"4 h
+
+3 h 24 min",264.0,69.0,"{'brown sugar': 1.0, 'lemon': 1.0, 'onion': 1.0, 'blueberry': 3.0}",Jam Maker,jam maker,Machine/Processed,1.0
+Orange,orange,71,71,1 d 7 h,1860.0,19.0,{},Orange tree (33rd crop),orange tree,Raw/Resource,2.0
+Flower shawl,flower shawl,71,71,1 h 30 min,90.0,35.0,"{'wool': 2.0, 'sunflower': 3.0, 'blackberry': 1.0}",Loom,loom,Machine/Processed,1.0
+Orange juice,orange juice,71,71,2 h,120.0,28.0,{'orange': 2.0},Juice Press,juice press,Machine/Processed,1.0
+Peanut butter and jelly sandwich,peanut butter and jelly sandwich,71,71,25 min,25.0,80.0,"{'bread': 2.0, 'raspberry jam': 1.0, 'peanuts': 1.0}",Sandwich Bar,sandwich bar,Machine/Processed,1.0
+Onion soup,onion soup,72,72,2 h 30 min,150.0,39.0,"{'bread': 2.0, 'cheese': 1.0, 'onion': 3.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Lemon candle,lemon candle,72,72,2 h 15 min,135.0,55.0,"{'beeswax': 1.0, 'lemon': 2.0}",Candle Maker,candle maker,Machine/Processed,1.0
+Top hat,top hat,72,72,3 h 30 min,210.0,74.0,"{'cotton fabric': 3.0, 'duck feather': 1.0, 'refined coal': 1.0}",Hat Maker,hat maker,Machine/Processed,1.0
+Gnocchi,gnocchi,72,72,1 h 20 min,80.0,57.0,"{'potato': 4.0, 'tomato': 3.0, 'wheat': 2.0, 'butter': 2.0}",Pasta Kitchen,pasta kitchen,Machine/Processed,1.0
+Beetroot,beetroot,72,72,40 min,40.0,3.0,{},Field (34th crop),field,Raw/Resource,2.0
+Winter veggies,winter veggies,72,72,25 min,25.0,24.0,"{'beetroot': 2.0, 'carrot': 3.0, 'potato': 2.0, 'pumpkin': 2.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Rice noodles,rice noodles,73,73,20 min,20.0,12.0,{'rice': 5.0},Pasta Maker,pasta maker,Machine/Processed,1.0
+Noodle soup,noodle soup,73,73,2 h,120.0,52.0,"{'carrot': 2.0, 'chili pepper': 1.0, 'egg': 2.0, 'rice noodles': 3.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Gracious bouquet,gracious bouquet,73,73,40 min,40.0,60.0,"{'cotton fabric': 1.0, 'lily': 5.0, 'gold ore': 1.0, 'diamond': 1.0}",Flower Shop,flower shop,Machine/Processed,1.0
+Bell pepper,bell pepper,74,74,4 h 30 min,270.0,7.0,{},Field (35th crop),field,Raw/Resource,2.0
+Marmalade,marmalade,74,74,8 h 30 min,510.0,54.0,{'orange': 3.0},Jam Maker,jam maker,Machine/Processed,1.0
+Sun hat,sun hat,74,74,2 h 30 min,150.0,66.0,"{'duck feather': 2.0, 'indigo': 1.0, 'raspberry': 1.0, 'wool': 3.0}",Hat Maker,hat maker,Machine/Processed,1.0
+Veggie lasagna,veggie lasagna,74,74,1 h 40 min,100.0,63.0,"{'tomato sauce': 1.0, 'fresh pasta': 3.0, 'carrot': 1.0, 'cheese': 1.0}",Pasta Kitchen,pasta kitchen,Machine/Processed,1.0
+Veggie platter,veggie platter,74,74,2 h,120.0,32.0,"{'bell pepper': 2.0, 'carrot': 2.0, 'tomato': 2.0, 'cream': 1.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Chamomile essential oil,chamomile essential oil,74,74,10 min,10.0,8.0,{'chamomile': 5.0},Essential Oils Lab,essential oils lab,Machine/Processed,1.0
+Hot dog,hot dog,75,75,30 min,30.0,44.0,"{'bacon': 2.0, 'bread': 1.0, 'tomato sauce': 1.0}",Hot Dog Stand,hot dog stand,Machine/Processed,1.0
+Coleslaw,coleslaw,75,75,1 h 15 min,75.0,56.0,"{'cabbage': 3.0, 'carrot': 2.0, 'mayonnaise': 1.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Cotton candy,cotton candy,75,75,30 min,30.0,27.0,"{'white sugar': 3.0, 'strawberry': 1.0}",Candy Machine,candy machine,Machine/Processed,1.0
+Peach,peach,76,76,1 d 6 h,1800.0,20.0,{},Peach tree (36th crop),peach tree,Raw/Resource,2.0
+Peach tart,peach tart,76,76,2 h 30 min,150.0,52.0,"{'cream': 1.0, 'egg': 2.0, 'peach': 3.0, 'wheat': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Tofu dog,tofu dog,76,76,45 min,45.0,44.0,"{'lettuce': 3.0, 'soybean': 6.0, 'tomato': 4.0}",Hot Dog Stand,hot dog stand,Machine/Processed,1.0
+Big sushi roll,big sushi roll,76,76,1 h 30 min,90.0,77.0,"{'lettuce': 5.0, 'rice': 20.0, 'fish fillet': 1.0, 'egg': 3.0}",Sushi Bar,sushi bar,Machine/Processed,1.0
+Beetroot salad,beetroot salad,76,76,45 min,45.0,28.0,"{'beetroot': 3.0, 'goat cheese': 1.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Plain donut,plain donut,76,76,15 min,15.0,15.0,"{'milk': 1.0, 'white sugar': 1.0, 'egg': 1.0, 'wheat': 3.0}",Donut Maker,donut maker,Machine/Processed,1.0
+Salsa,salsa,77,77,20 min,20.0,30.0,"{'chili pepper': 2.0, 'onion': 2.0, 'tomato': 2.0}",Sauce Maker,sauce maker,Machine/Processed,1.0
+Taco,taco,77,77,45 min,45.0,47.0,"{'corn bread': 1.0, 'bacon': 1.0, 'salsa': 1.0}",Taco Kitchen,taco kitchen,Machine/Processed,1.0
+Colourful omelet,colourful omelet,77,77,1 h,60.0,16.0,"{'egg': 2.0, 'carrot': 2.0, 'bell pepper': 1.0, 'cabbage': 1.0}",Omelet Station,omelet station,Machine/Processed,1.0
+Spring omelet,spring omelet,77,77,40 min,40.0,27.0,"{'egg': 2.0, 'asparagus': 2.0, 'butter': 1.0}",Omelet Station,omelet station,Machine/Processed,1.0
+Summer rolls,summer rolls,78,78,1 h,60.0,38.0,"{'rice noodles': 2.0, 'carrot': 2.0, 'lettuce': 1.0, 'chili pepper': 1.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Orange sorbet,orange sorbet,78,78,3 h 30 min,210.0,48.0,"{'honey': 1.0, 'orange': 2.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Corn dog,corn dog,78,78,1 h,60.0,63.0,"{'bacon': 4.0, 'corn': 4.0, 'olive oil': 1.0}",Hot Dog Stand,hot dog stand,Machine/Processed,1.0
+Potato soup,potato soup,78,78,2 h 30 min,150.0,31.0,"{'milk': 1.0, 'onion': 2.0, 'potato': 3.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Ginger,ginger,78,78,2 h 30 min,150.0,6.0,{},Field (37th crop),field,Raw/Resource,2.0
+Sesame brittle,sesame brittle,78,78,1 h,60.0,32.0,"{'sesame': 3.0, 'ginger': 1.0, 'honey': 1.0}",Candy Machine,candy machine,Machine/Processed,1.0
+Affogato,affogato,78,78,20 min,20.0,56.0,"{'vanilla ice cream': 1.0, 'espresso': 1.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Fish taco,fish taco,79,79,1 h 30 min,90.0,47.0,"{'chili pepper': 2.0, 'corn bread': 2.0, 'fish fillet': 1.0, 'lemon': 1.0}",Taco Kitchen,taco kitchen,Machine/Processed,1.0
+Peach jam,peach jam,79,79,8 h,480.0,55.0,{'peach': 3.0},Jam Maker,jam maker,Machine/Processed,1.0
+Lobster pasta,lobster pasta,79,79,2 h,120.0,76.0,"{'lobster tail': 1.0, 'cream': 2.0, 'fresh pasta': 3.0, 'tomato': 4.0}",Pasta Kitchen,pasta kitchen,Machine/Processed,1.0
+Cucumber sandwich,cucumber sandwich,79,79,35 min,35.0,55.0,"{'cucumber': 2.0, 'mayonnaise': 1.0, 'bread': 2.0}",Sandwich Bar,sandwich bar,Machine/Processed,1.0
+Spicy fish,spicy fish,79,79,1 h 30 min,90.0,65.0,"{'fish fillet': 1.0, 'chili pepper': 3.0, 'garlic': 5.0, 'olive oil': 1.0}",Wok Kitchen,wok kitchen,Machine/Processed,1.0
+Sprinkled donut,sprinkled donut,79,79,20 min,20.0,37.0,"{'plain donut': 1.0, 'cacao': 2.0}",Donut Maker,donut maker,Machine/Processed,1.0
+Cheese omelet,cheese omelet,79,79,1 h 30 min,90.0,55.0,"{'egg': 3.0, 'cheese': 2.0, 'tomato': 2.0, 'onion': 1.0}",Omelet Station,omelet station,Machine/Processed,1.0
+Tea leaf,tea leaf,80,80,6 h 30 min,390.0,9.0,{},Field (38th crop),field,Raw/Resource,2.0
+Green tea,green tea,80,80,30 min,30.0,29.0,{'tea leaf': 5.0},Tea Stand,tea stand,Machine/Processed,1.0
+Onion dog,onion dog,80,80,1 h 15 min,75.0,36.0,"{'bacon': 2.0, 'bread': 1.0, 'chili pepper': 1.0, 'onion': 3.0}",Hot Dog Stand,hot dog stand,Machine/Processed,1.0
+Stuffed peppers,stuffed peppers,80,80,20 min,20.0,42.0,"{'bell pepper': 3.0, 'bacon': 1.0, 'rice': 3.0, 'cheese': 1.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Ginger essential oil,ginger essential oil,80,80,20 min,20.0,19.0,{'ginger': 5.0},Essential Oils Lab,essential oils lab,Machine/Processed,1.0
+Milk tea,milk tea,81,81,45 min,45.0,23.0,"{'milk': 1.0, 'tea leaf': 3.0}",Tea Stand,tea stand,Machine/Processed,1.0
+Bell pepper soup,bell pepper soup,81,81,1 h,60.0,52.0,"{'bread': 1.0, 'olive oil': 1.0, 'chili pepper': 1.0, 'bell pepper': 2.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Chocolate fondue,chocolate fondue,81,81,25 min,25.0,74.0,"{'chocolate': 1.0, 'strawberry': 3.0}",Fondue Pot,fondue pot,Machine/Processed,1.0
+Peony,peony,82,82,4 h,240.0,7.0,{},Field (39th crop),field,Raw/Resource,2.0
+Quesadilla,quesadilla,82,82,1 h,60.0,29.0,"{'cheese': 1.0, 'chili pepper': 2.0, 'wheat': 4.0}",Taco Kitchen,taco kitchen,Machine/Processed,1.0
+Fruit salad,fruit salad,82,82,2 h,120.0,71.0,"{'blackberry': 2.0, 'honey': 1.0, 'orange': 1.0, 'strawberry': 3.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Crunchy donut,crunchy donut,82,82,30 min,30.0,71.0,"{'plain donut': 1.0, 'cacao': 1.0, 'peanuts': 1.0}",Donut Maker,donut maker,Machine/Processed,1.0
+Pasta carbonara,pasta carbonara,83,83,2 h 30 min,150.0,49.0,"{'fresh pasta': 3.0, 'bacon': 2.0, 'egg': 1.0, 'cheese': 1.0}",Pasta Kitchen,pasta kitchen,Machine/Processed,1.0
+Peach ice cream,peach ice cream,83,83,3 h,180.0,54.0,"{'cream': 1.0, 'honey': 1.0, 'peach': 2.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Honey tea,honey tea,83,83,40 min,40.0,37.0,"{'honey': 1.0, 'tea leaf': 3.0}",Tea Stand,tea stand,Machine/Processed,1.0
+Broccoli,broccoli,83,83,1 h 30 min,90.0,4.0,{},Field (40th crop),field,Raw/Resource,2.0
+Broccoli pasta,broccoli pasta,83,83,1 h,60.0,41.0,"{'broccoli': 3.0, 'cheese': 1.0, 'fresh pasta': 3.0}",Pasta Kitchen,pasta kitchen,Machine/Processed,1.0
+Rice omelet,rice omelet,83,83,2 h,120.0,68.0,"{'egg': 3.0, 'tomato sauce': 2.0, 'rice': 1.0}",Omelet Station,omelet station,Machine/Processed,1.0
+Summer salad,summer salad,84,84,3 h,180.0,66.0,"{'goat cheese': 1.0, 'onion': 3.0, 'peach': 1.0, 'tomato': 3.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Grapes,grapes,84,84,3 h,180.0,6.0,{},Field (41st crop),field,Raw/Resource,2.0
+Grape juice,grape juice,84,84,2 h 30 min,150.0,13.0,{'grapes': 2.0},Juice Press,juice press,Machine/Processed,1.0
+Onion melt,onion melt,84,84,1 h 30 min,90.0,50.0,"{'corn bread': 2.0, 'onion': 3.0, 'cheese': 1.0}",Sandwich Bar,sandwich bar,Machine/Processed,1.0
+Honey soap,honey soap,84,84,1 h,60.0,39.0,"{'goat milk': 1.0, 'cacao': 2.0, 'honeycomb': 1.0}",Bath Kiosk,bath kiosk,Machine/Processed,1.0
+Lemon lotion,lemon lotion,84,84,1 h 15 min,75.0,48.0,"{'olive oil': 1.0, 'lemon': 1.0}",Bath Kiosk,bath kiosk,Machine/Processed,1.0
+Colorful candles,colorful candles,84,84,1 h 50 min,110.0,39.0,"{'beeswax': 1.0, 'raspberry': 1.0, 'carrot': 1.0}",Candle Maker,candle maker,Machine/Processed,1.0
+Mint,mint,85,85,3 h,180.0,6.0,{},Field (42nd crop),field,Raw/Resource,2.0
+Mint essential oil,mint essential oil,85,85,15 min,15.0,20.0,{'mint': 3.0},Essential Oils Lab,essential oils lab,Machine/Processed,1.0
+Grape jam,grape jam,85,85,6 h 30 min,390.0,19.0,{'grapes': 3.0},Jam Maker,jam maker,Machine/Processed,1.0
+Mint ice cream,mint ice cream,85,85,2 h 15 min,135.0,34.0,"{'cream': 1.0, 'white sugar': 1.0, 'mint': 2.0, 'cacao': 1.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Flower crown,flower crown,86,86,2 h,120.0,40.0,"{'peony': 5.0, 'cotton': 4.0}",Hat Maker,hat maker,Machine/Processed,1.0
+Lemon tea,lemon tea,86,86,20 min,20.0,29.0,"{'lemon': 1.0, 'tea leaf': 3.0}",Tea Stand,tea stand,Machine/Processed,1.0
+Bacon fondue,bacon fondue,86,86,30 min,30.0,60.0,"{'bacon': 3.0, 'broccoli': 1.0, 'bell pepper': 1.0, 'olive oil': 1.0}",Fondue Pot,fondue pot,Machine/Processed,1.0
+Peanut noodles,peanut noodles,86,86,45 min,45.0,80.0,"{'ginger': 1.0, 'rice noodles': 1.0, 'soy sauce': 1.0, 'peanuts': 1.0}",Wok Kitchen,wok kitchen,Machine/Processed,1.0
+Gingerbread cookie,gingerbread cookie,86,86,30 min,30.0,33.0,"{'wheat': 5.0, 'butter': 1.0, 'syrup': 1.0, 'ginger': 2.0}",Bakery,bakery,Machine/Processed,1.0
+Cream donut,cream donut,86,86,25 min,25.0,27.0,"{'plain donut': 1.0, 'cream': 1.0, 'brown sugar': 1.0}",Donut Maker,donut maker,Machine/Processed,1.0
+Nachos,nachos,87,87,1 h 15 min,75.0,52.0,"{'cheese': 1.0, 'corn': 4.0, 'salsa': 1.0}",Taco Kitchen,taco kitchen,Machine/Processed,1.0
+Spicy pasta,spicy pasta,87,87,1 h 30 min,90.0,69.0,"{'fresh pasta': 3.0, 'tomato sauce': 1.0, 'chili pepper': 3.0, 'onion': 2.0}",Pasta Kitchen,pasta kitchen,Machine/Processed,1.0
+Broccoli soup,broccoli soup,87,87,1 h 15 min,75.0,28.0,"{'broccoli': 3.0, 'onion': 1.0, 'potato': 3.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Bacon fries,bacon fries,87,87,25 min,25.0,36.0,"{'chili pepper': 1.0, 'bacon': 2.0, 'potato': 4.0, 'garlic': 1.0}",Deep Fryer,deep fryer,Machine/Processed,1.0
+Potato omelet,potato omelet,87,87,1 h 15 min,75.0,32.0,"{'egg': 3.0, 'bacon': 3.0, 'potato': 1.0}",Omelet Station,omelet station,Machine/Processed,1.0
+Mixed smoothie,mixed smoothie,88,88,30 min,30.0,60.0,"{'lemon': 1.0, 'orange': 2.0, 'peach': 2.0}",Smoothie Mixer,smoothie mixer,Machine/Processed,1.0
+Banana,banana,88,88,1 d 3 h,1620.0,20.0,{},Banana tree (43rd crop),banana tree,Raw/Resource,2.0
+Iced banana latte,iced banana latte,88,88,20 min,20.0,33.0,"{'banana': 1.0, 'coffee bean': 2.0, 'milk': 1.0}",Coffee Kiosk,coffee kiosk,Machine/Processed,1.0
+Apple ginger tea,apple ginger tea,88,88,30 min,30.0,20.0,"{'ginger': 1.0, 'apple': 2.0, 'tea leaf': 1.0}",Tea Stand,tea stand,Machine/Processed,1.0
+Bacon donut,bacon donut,88,88,30 min,30.0,46.0,"{'plain donut': 1.0, 'bacon': 3.0, 'syrup': 1.0}",Donut Maker,donut maker,Machine/Processed,1.0
+Passion fruit,passion fruit,88,88,1 h,60.0,4.0,{},Field (44th crop),field,Raw/Resource,2.0
+Passion fruit juice,passion fruit juice,88,88,45 min,45.0,8.0,{'passion fruit': 2.0},Juice Press,juice press,Machine/Processed,1.0
+Orange tea,orange tea,89,89,40 min,40.0,30.0,"{'orange': 1.0, 'tea leaf': 3.0}",Tea Stand,tea stand,Machine/Processed,1.0
+Fruit cake,fruit cake,89,89,3 h,180.0,54.0,"{'cherry': 2.0, 'grapes': 2.0, 'orange': 2.0, 'wheat': 3.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Mushroom,mushroom,89,89,20 min,20.0,2.0,{},Field (45th crop),field,Raw/Resource,2.0
+Mushroom salad,mushroom salad,89,89,1 h,60.0,26.0,"{'mushroom': 3.0, 'lettuce': 1.0, 'potato': 2.0, 'bacon': 1.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Tofu stir fry,tofu stir fry,89,89,1 h 15 min,75.0,37.0,"{'soybean': 3.0, 'onion': 3.0, 'broccoli': 3.0, 'sesame': 3.0}",Wok Kitchen,wok kitchen,Machine/Processed,1.0
+Candy bouquet,candy bouquet,90,90,20 min,20.0,66.0,"{'peony': 3.0, 'toffee': 1.0, 'caramel apple': 1.0}",Flower Shop,flower shop,Machine/Processed,1.0
+Eggplant,eggplant,90,90,40 min,40.0,3.0,{},Field (46th crop),field,Raw/Resource,2.0
+Grilled eggplant,grilled eggplant,90,90,40 min,40.0,39.0,"{'eggplant': 3.0, 'salsa': 1.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Banana bread,banana bread,91,91,30 min,30.0,50.0,"{'banana': 3.0, 'egg': 1.0, 'grapes': 2.0, 'wheat': 3.0}",Bakery,bakery,Machine/Processed,1.0
+Cheese fondue,cheese fondue,91,91,20 min,20.0,59.0,"{'potato bread': 1.0, 'cheese': 1.0, 'mushroom': 2.0, 'tomato': 1.0}",Fondue Pot,fondue pot,Machine/Processed,1.0
+Hand pies,hand pies,91,91,20 min,20.0,35.0,"{'apple jam': 1.0, 'egg': 2.0, 'wheat': 5.0}",Deep Fryer,deep fryer,Machine/Processed,1.0
+Pickles,pickles,91,91,4 h,240.0,32.0,"{'cucumber': 3.0, 'onion': 2.0, 'lemon': 1.0}",Preservation Station,preservation station,Machine/Processed,1.0
+Watermelon,watermelon,92,92,5 h,300.0,8.0,{},Field (47th crop),field,Raw/Resource,2.0
+Iced tea,iced tea,92,92,30 min,30.0,30.0,"{'peach': 1.0, 'tea leaf': 3.0}",Tea Stand,tea stand,Machine/Processed,1.0
+Goat cheese toast,goat cheese toast,92,92,50 min,50.0,36.0,"{'bread': 1.0, 'goat cheese': 1.0, 'grapes': 3.0}",Sandwich Bar,sandwich bar,Machine/Processed,1.0
+Watermelon juice,watermelon juice,92,92,1 h,60.0,13.0,{'watermelon': 2.0},Juice Press,juice press,Machine/Processed,1.0
+Birthday bouquet,birthday bouquet,92,92,20 min,20.0,42.0,"{'cherry juice': 1.0, 'peony': 3.0, 'lily': 1.0, 'indigo': 1.0}",Flower Shop,flower shop,Machine/Processed,1.0
+Passion fruit pie,passion fruit pie,92,92,50 min,50.0,13.0,"{'passion fruit': 3.0, 'wheat': 2.0, 'egg': 1.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Soft bouquet,soft bouquet,93,93,30 min,30.0,36.0,"{'peony': 4.0, 'cotton': 1.0, 'cotton fabric': 1.0}",Flower Shop,flower shop,Machine/Processed,1.0
+Black sesame smoothie,black sesame smoothie,93,93,45 min,45.0,37.0,"{'sesame': 3.0, 'banana': 1.0, 'goat milk': 2.0}",Smoothie Mixer,smoothie mixer,Machine/Processed,1.0
+Exfoliating soap,exfoliating soap,93,93,1 h,60.0,43.0,"{'cacao': 2.0, 'coffee bean': 2.0, 'raspberry': 1.0}",Bath Kiosk,bath kiosk,Machine/Processed,1.0
+Filled donut,filled donut,93,93,35 min,35.0,48.0,"{'plain donut': 1.0, 'raspberry jam': 1.0}",Donut Maker,donut maker,Machine/Processed,1.0
+Plum,plum,94,94,1 d,1440.0,16.0,{},Plum tree (48th crop),plum tree,Raw/Resource,2.0
+Banana pancakes,banana pancakes,94,94,1 h,60.0,42.0,"{'banana': 1.0, 'blackberry': 2.0, 'cream': 1.0, 'wheat': 3.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Plum jam,plum jam,94,94,5 h,300.0,46.0,{'plum': 3.0},Jam Maker,jam maker,Machine/Processed,1.0
+Clay,clay,94,94,1 h 50 min,110.0,5.0,{},Field (49th crop),field,Raw/Resource,2.0
+Tea pot,tea pot,94,94,3 h 40 min,220.0,26.0,"{'clay': 3.0, 'coffee bean': 1.0, 'gold ore': 1.0}",Pottery Studio,pottery studio,Machine/Processed,1.0
+Floral candle,floral candle,95,95,2 h,120.0,53.0,"{'beeswax': 1.0, 'peony': 2.0, 'sunflower': 2.0, 'indigo': 3.0}",Candle Maker,candle maker,Machine/Processed,1.0
+Chocolate roll,chocolate roll,95,95,1 h 30 min,90.0,72.0,"{'cacao': 5.0, 'cream': 1.0, 'wheat': 3.0, 'mint': 3.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Canned fish,canned fish,95,95,3 h 40 min,220.0,56.0,"{'fish fillet': 2.0, 'chili pepper': 1.0, 'olive oil': 1.0}",Preservation Station,preservation station,Machine/Processed,1.0
+Chickpea,chickpea,95,95,1 h,60.0,4.0,{},Field (50th crop),field,Raw/Resource,2.0
+Hummus,hummus,95,95,30 min,30.0,33.0,"{'chickpea': 3.0, 'lemon': 2.0, 'garlic': 1.0}",Sauce Maker,sauce maker,Machine/Processed,1.0
+Banana split,banana split,96,96,3 h 30 min,210.0,48.0,"{'banana': 1.0, 'cherry': 3.0, 'cream': 1.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Fish skewer,fish skewer,96,96,30 min,30.0,21.0,"{'fish fillet': 1.0, 'mushroom': 3.0, 'ginger': 1.0, 'sesame': 2.0}",BBQ Grill,bbq grill,Machine/Processed,1.0
+Passion fruit jam,passion fruit jam,96,96,5 h 20 min,320.0,14.0,{'passion fruit': 3.0},Jam Maker,jam maker,Machine/Processed,1.0
+Potted plant,potted plant,96,96,3 h 40 min,220.0,26.0,"{'clay': 3.0, 'sunflower': 1.0}",Pottery Studio,pottery studio,Machine/Processed,1.0
+Mint tea,mint tea,97,97,35 min,35.0,31.0,"{'tea leaf': 3.0, 'mint': 1.0, 'watermelon': 1.0}",Tea Stand,tea stand,Machine/Processed,1.0
+Mushroom pot pie,mushroom pot pie,97,97,1 h,60.0,19.0,"{'mushroom': 3.0, 'cabbage': 3.0, 'wheat': 3.0, 'egg': 2.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Mango,mango,97,97,1 d 8 h,1920.0,20.0,{},Mango tree (51st crop),mango tree,Raw/Resource,2.0
+Mango juice,mango juice,97,97,50 min,50.0,27.0,{'mango': 2.0},Juice Press,juice press,Machine/Processed,1.0
+Flower pendant,flower pendant,98,98,1 h,60.0,83.0,"{'peony': 3.0, 'platinum bar': 1.0, 'gold bar': 2.0}",Jeweler,jeweler,Machine/Processed,1.0
+Chili poppers,chili poppers,98,98,40 min,40.0,48.0,"{'chili pepper': 3.0, 'wheat': 1.0, 'bacon': 3.0, 'cheese': 1.0}",Deep Fryer,deep fryer,Machine/Processed,1.0
+Falafel,falafel,98,98,55 min,55.0,27.0,"{'chili pepper': 1.0, 'chickpea': 3.0, 'onion': 2.0, 'garlic': 2.0}",Deep Fryer,deep fryer,Machine/Processed,1.0
+Kimchi,kimchi,98,98,5 h,300.0,26.0,"{'cabbage': 5.0, 'ginger': 1.0, 'chili pepper': 1.0, 'garlic': 1.0}",Preservation Station,preservation station,Machine/Processed,1.0
+Eggplant parmesan,eggplant parmesan,99,99,45 min,45.0,53.0,"{'eggplant': 3.0, 'cheese': 1.0, 'tomato sauce': 1.0}",Pie Oven,pie oven,Machine/Processed,1.0
+Honey face mask,honey face mask,99,99,1 h 30 min,90.0,38.0,"{'egg': 2.0, 'honey': 1.0, 'lemon': 1.0}",Bath Kiosk,bath kiosk,Machine/Processed,1.0
+Clay mug,clay mug,99,99,3 h 20 min,200.0,25.0,"{'clay': 3.0, 'indigo': 2.0, 'peony': 1.0}",Pottery Studio,pottery studio,Machine/Processed,1.0
+Rich fudge,rich fudge,99,99,2 h,120.0,77.0,"{'cacao': 3.0, 'butter': 3.0, 'white sugar': 2.0}",Fudge Shop,fudge shop,Machine/Processed,1.0
+Cocoa smoothie,cocoa smoothie,100,100,40 min,40.0,61.0,"{'banana': 2.0, 'cacao': 3.0, 'milk': 1.0}",Smoothie Mixer,smoothie mixer,Machine/Processed,1.0
+Fried candy bar,fried candy bar,100,100,15 min,15.0,87.0,"{'cacao': 3.0, 'cookie': 1.0, 'peanuts': 1.0}",Deep Fryer,deep fryer,Machine/Processed,1.0
+Tart dressing,tart dressing,100,100,30 min,30.0,34.0,"{'passion fruit': 2.0, 'chili pepper': 2.0, 'honey': 1.0}",Sauce Maker,sauce maker,Machine/Processed,1.0
+Tropical fondue,tropical fondue,100,100,35 min,35.0,50.0,"{'white sugar': 1.0, 'cream': 2.0, 'pineapple': 3.0, 'mango': 2.0}",Fondue Pot,fondue pot,Machine/Processed,1.0
+Chamomile tea,chamomile tea,100,100,20 min,20.0,17.0,"{'chamomile': 5.0, 'honeycomb': 1.0}",Tea Stand,tea stand,Machine/Processed,1.0
+Mushroom pasta,mushroom pasta,101,101,1 h 15 min,75.0,33.0,"{'mushroom': 5.0, 'fresh pasta': 3.0, 'goat milk': 1.0}",Pasta Kitchen,pasta kitchen,Machine/Processed,1.0
+Coconut,coconut,101,101,1 d 12 h,2160.0,21.0,{},Coconut tree (52nd crop),coconut tree,Raw/Resource,2.0
+Macaroon,macaroon,101,101,30 min,30.0,50.0,"{'cacao': 1.0, 'coconut': 2.0, 'white sugar': 2.0}",Bakery,bakery,Machine/Processed,1.0
+Plum smoothie,plum smoothie,102,102,35 min,35.0,62.0,"{'plum': 3.0, 'grapes': 1.0, 'mint': 1.0, 'honey': 1.0}",Smoothie Mixer,smoothie mixer,Machine/Processed,1.0
+Dried fruit,dried fruit,102,102,3 h,180.0,32.0,"{'grapes': 1.0, 'raspberry': 1.0, 'strawberry': 1.0, 'orange': 1.0}",Preservation Station,preservation station,Machine/Processed,1.0
+Mint fudge,mint fudge,102,102,2 h 30 min,150.0,62.0,"{'butter': 2.0, 'cacao': 2.0, 'white sugar': 1.0, 'mint': 3.0}",Fudge Shop,fudge shop,Machine/Processed,1.0
+Coconut ice cream,coconut ice cream,102,102,15 min,15.0,38.0,"{'coconut': 2.0, 'syrup': 1.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Samosa,samosa,103,103,1 h 15 min,75.0,27.0,"{'chickpea': 2.0, 'wheat': 4.0, 'chili pepper': 1.0, 'potato': 3.0}",Deep Fryer,deep fryer,Machine/Processed,1.0
+Plain yogurt,plain yogurt,103,103,2 h,120.0,28.0,"{'milk': 3.0, 'cream': 2.0}",Yogurt Maker,yogurt maker,Machine/Processed,1.0
+Mushroom soup,mushroom soup,104,104,1 h 20 min,80.0,21.0,"{'mushroom': 3.0, 'milk': 1.0, 'onion': 2.0}",Soup Kitchen,soup kitchen,Machine/Processed,1.0
+Chili fudge,chili fudge,104,104,2 h 50 min,170.0,64.0,"{'butter': 2.0, 'cacao': 2.0, 'white sugar': 1.0, 'chili pepper': 3.0}",Fudge Shop,fudge shop,Machine/Processed,1.0
+Tropical smoothie,tropical smoothie,104,104,40 min,40.0,57.0,"{'coconut': 1.0, 'banana': 1.0, 'passion fruit': 2.0, 'mango': 2.0}",Smoothie Mixer,smoothie mixer,Machine/Processed,1.0
+Guava,guava,104,104,1 d 10 h,2040.0,22.0,{},Guava tree (53rd crop),guava tree,Raw/Resource,2.0
+Guava juice,guava juice,104,104,55 min,55.0,30.0,{'guava': 2.0},Juice Press,juice press,Machine/Processed,1.0
+Guava compote,guava compote,104,104,4 h 20 min,260.0,50.0,"{'guava': 2.0, 'lemon': 1.0, 'white sugar': 1.0}",Preservation Station,preservation station,Machine/Processed,1.0
+Strawberry yogurt,strawberry yogurt,105,105,40 min,40.0,63.0,"{'plain yogurt': 1.0, 'strawberry jam': 1.0}",Yogurt Maker,yogurt maker,Machine/Processed,1.0
+Veggie bouquet,veggie bouquet,106,106,15 min,15.0,42.0,"{'broccoli': 3.0, 'tomato': 3.0, 'mushroom': 3.0, 'cotton fabric': 1.0}",Flower Shop,flower shop,Machine/Processed,1.0
+Chickpea stew,chickpea stew,106,106,1 h 30 min,90.0,34.0,"{'coconut': 1.0, 'tomato': 2.0, 'chickpea': 3.0}",Stew Pot,stew pot,Machine/Processed,1.0
+Fruit sorbet,fruit sorbet,106,106,1 h,60.0,62.0,"{'guava': 1.0, 'passion fruit': 1.0, 'mango': 2.0, 'white sugar': 3.0}",Ice Cream Maker,ice cream maker,Machine/Processed,1.0
+Pomegranate,pomegranate,107,107,1 d 3 h,1620.0,22.0,{},Pomegranate tree (54th crop),pomegranate tree,Raw/Resource,2.0
+Pomegranate tea,pomegranate tea,107,107,34 min,34.0,37.0,"{'pomegranate': 1.0, 'tea leaf': 4.0}",Tea Stand,tea stand,Machine/Processed,1.0
+Lemon fudge,lemon fudge,108,108,1 h 50 min,110.0,70.0,"{'butter': 2.0, 'lemon': 2.0, 'white sugar': 2.0, 'milk': 3.0}",Fudge Shop,fudge shop,Machine/Processed,1.0
+Pomegranate cake,pomegranate cake,108,108,2 h 40 min,160.0,38.0,"{'pomegranate': 1.0, 'egg': 2.0, 'cream': 2.0, 'wheat': 6.0}",Cake Oven,cake oven,Machine/Processed,1.0
+Hummus wrap,hummus wrap,109,109,30 min,30.0,45.0,"{'bread': 2.0, 'lettuce': 1.0, 'hummus': 1.0}",Sandwich Bar,sandwich bar,Machine/Processed,1.0
+Tropical yogurt,tropical yogurt,109,109,1 h,60.0,54.0,"{'plain yogurt': 1.0, 'raspberry': 4.0, 'passion fruit': 1.0, 'mango': 2.0}",Yogurt Maker,yogurt maker,Machine/Processed,1.0
+Chili stew,chili stew,109,109,2 h,120.0,44.0,"{'chili pepper': 3.0, 'bacon': 2.0, 'onion': 2.0, 'cream': 1.0}",Stew Pot,stew pot,Machine/Processed,1.0
+Plain cupcake,plain cupcake,109,109,40 min,40.0,34.0,"{'milk': 2.0, 'white sugar': 3.0, 'egg': 1.0, 'wheat': 5.0}",Cupcake Maker,cupcake maker,Machine/Processed,1.0
+Guava cupcake,guava cupcake,109,109,1 h 10 min,70.0,70.0,"{'plain cupcake': 1.0, 'guava': 2.0, 'cream': 1.0}",Cupcake Maker,cupcake maker,Machine/Processed,1.0
+Rice ball,rice ball,110,110,45 min,45.0,55.0,"{'rice': 20.0, 'sesame': 1.0, 'plum': 1.0}",Sushi Bar,sushi bar,Machine/Processed,1.0
+Fresh diffuser,fresh diffuser,110,110,20 min,20.0,42.0,"{'ginger essential oil': 1.0, 'mint essential oil': 1.0}",Perfumerie,perfumerie,Machine/Processed,1.0
+Peanut fudge,peanut fudge,111,111,1 h 30 min,90.0,136.0,"{'butter': 2.0, 'cacao': 2.0, 'white sugar': 1.0, 'peanuts': 2.0}",Fudge Shop,fudge shop,Machine/Processed,1.0
+Tropical cupcake,tropical cupcake,112,112,1 h 30 min,90.0,68.0,"{'plain cupcake': 1.0, 'pineapple': 3.0, 'coconut': 2.0}",Cupcake Maker,cupcake maker,Machine/Processed,1.0
+Winter stew,winter stew,112,112,2 h 20 min,140.0,7.0,"{'bacon': 1.0, 'potato': 3.0, 'onion': 2.0, 'mushroom': 2.0}",Stew Pot,stew pot,Machine/Processed,1.0
+Zesty perfume,zesty perfume,113,113,15 min,15.0,46.0,"{'lemon essential oil': 1.0, 'ginger': 3.0}",Perfumerie,perfumerie,Machine/Processed,1.0
+Cookie cupcake,cookie cupcake,114,114,2 h,120.0,85.0,"{'plain cupcake': 1.0, 'cream': 2.0, 'cookie': 2.0, 'cacao': 1.0}",Cupcake Maker,cupcake maker,Machine/Processed,1.0
+Plain waffles,plain waffles,114,114,25 min,25.0,24.0,"{'white sugar': 2.0, 'egg': 3.0, 'wheat': 5.0}",Waffle Maker,waffle maker,Machine/Processed,1.0
+Berry waffles,berry waffles,114,114,35 min,35.0,72.0,"{'plain waffles': 1.0, 'syrup': 1.0, 'raspberry': 3.0, 'blackberry': 2.0}",Waffle Maker,waffle maker,Machine/Processed,1.0
+Calming diffuser,calming diffuser,116,116,25 min,25.0,20.0,"{'chamomile essential oil': 1.0, 'indigo': 3.0}",Perfumerie,perfumerie,Machine/Processed,1.0
+Orange salad,orange salad,117,117,45 min,45.0,66.0,"{'cheese': 1.0, 'lettuce': 3.0, 'pomegranate': 1.0, 'orange': 2.0}",Salad Bar,salad bar,Machine/Processed,1.0
+Chocolate waffles,chocolate waffles,117,117,40 min,40.0,76.0,"{'plain waffles': 1.0, 'cacao': 2.0, 'strawberry': 3.0, 'banana': 1.0}",Waffle Maker,waffle maker,Machine/Processed,1.0
+Blueberry Waffles,blueberry waffles,118,118,42 min,42.0,80.0,"{'plain waffles': 1.0, 'milk': 1.0, 'cacao': 2.0, 'blueberry': 3.0}",Waffle Maker,waffle maker,Machine/Processed,1.0
+Breakfast waffles,breakfast waffles,119,119,45 min,45.0,51.0,"{'plain waffles': 1.0, 'bacon': 2.0, 'egg': 1.0, 'asparagus': 2.0}",Waffle Maker,waffle maker,Machine/Processed,1.0
+Oats,oats,119,119,7 min,7.0,1.0,{},Field (55th crop),field,Raw/Resource,2.0
+Breakfast bowl,breakfast bowl,119,119,50 min,50.0,54.0,"{'plain yogurt': 1.0, 'oats': 4.0, 'honey': 1.0, 'blackberry': 2.0}",Yogurt Maker,yogurt maker,Machine/Processed,1.0
+Apple porridge,apple porridge,119,119,20 min,20.0,62.0,"{'apple': 1.0, 'apple jam': 2.0, 'oats': 4.0}",Porridge Bar,porridge bar,Machine/Processed,1.0
+Pineapple coconut bars,pineapple coconut bars,120,120,40 min,40.0,34.0,"{'coconut': 1.0, 'white sugar': 2.0, 'oats': 3.0, 'pineapple': 2.0}",Bakery,bakery,Machine/Processed,1.0
+Sweet porridge,sweet porridge,120,120,45 min,45.0,55.0,"{'peach': 1.0, 'honey': 2.0, 'oats': 3.0}",Porridge Bar,porridge bar,Machine/Processed,1.0
+Rich soap,rich soap,121,121,1 h 10 min,70.0,32.0,"{'oats': 2.0, 'pomegranate': 1.0, 'coconut': 1.0}",Bath Kiosk,bath kiosk,Machine/Processed,1.0
+Fresh porridge,fresh porridge,122,122,35 min,35.0,52.0,"{'pomegranate': 1.0, 'mint': 2.0, 'coconut': 2.0, 'oats': 3.0}",Porridge Bar,porridge bar,Machine/Processed,1.0
+Vanilla milkshake,vanilla milkshake,124,124,45 min,45.0,80.0,"{'vanilla ice cream': 1.0, 'cookie': 2.0, 'toffee': 1.0, 'syrup': 1.0}",Milkshake Bar,milkshake bar,Machine/Processed,1.0
+Mocha milkshake,mocha milkshake,125,125,30 min,30.0,125.0,"{'chocolate ice cream': 1.0, 'espresso': 2.0}",Milkshake Bar,milkshake bar,Machine/Processed,1.0
+Fruity milkshake,fruity milkshake,126,126,35 min,35.0,90.0,"{'peach ice cream': 1.0, 'orange': 2.0, 'lemon': 1.0}",Milkshake Bar,milkshake bar,Machine/Processed,1.0
