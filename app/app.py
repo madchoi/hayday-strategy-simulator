@@ -8,7 +8,7 @@ import pulp as pl
 import streamlit as st
 from io import StringIO
 
-CSV_PATH = "./goods.csv"
+CSV_PATH = "./app/goods.csv"
 
 # ----------------------------
 # Page config + CSS
