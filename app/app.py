@@ -335,7 +335,7 @@ if run_btn:
     
     k1.metric("Total XP", f"{res['XP_total']:,.0f}")
     k2.metric("XP / hour", f"{res['XP_per_hour']:,.1f}")
-    k3.metric("Time used", f"{used:,.1f} / {cap:,.1f} min")
+    k3.metric("Time used", f"{used:,.0f} min")
     k4.metric("Items in plan", 0 if plan.empty else len(plan))
 
     st.markdown("### Plan")
