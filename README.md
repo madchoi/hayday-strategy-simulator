@@ -21,10 +21,12 @@ The core result is an interactive Streamlit application that maximizes total XP 
 ## 📂 Project Structure  
 <pre>
 hayday-strategy-simulator/
-  |── data/ # scraped and cleaned data (CSV files)
+  |── app/ 
+    |── app.py             # The Streamlit application entry point (main script)
+    |── requirements.txt   # Deployment dependencies (Pandas, PuLP, Streamlit)
+    |── goods_final.csv    # Final, clean dataset used by app.py
+  |── data/ # scraping, cleaning, and structuring data
   ├── notebooks/ # Jupyter notebooks for exploration + analysis
-  ├── src/ # Python scripts for scraping + analysis functions
-  ├── visuals/ # saved charts + plots
   └── README.md # project description
 </pre>
 
