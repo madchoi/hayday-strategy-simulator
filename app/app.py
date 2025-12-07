@@ -195,7 +195,7 @@ def optimize_plan_notebook(
             model+=yield_map.get(k, 1.0) * x[k] >= (consume - initial_stock), v("balance_ge", k)
         else:
             # Case 2: Pure ingredient, no stock (Must produce exact consumption)
-            model+= ield_map.get(k, 1.0) * x[k] == consume, v("balance_eq", k)
+            model+=yield_map.get(k, 1.0) * x[k] == consume, v("balance_eq", k)
     
     # Machine Constraint
     active_buildings = {r["Building"] for _, r in avail.iterrows()}
